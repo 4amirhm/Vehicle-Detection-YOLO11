@@ -46,10 +46,32 @@ This project demonstrates real-time **vehicle detection** using a custom YOLO-ba
 ```bash
 git clone https://github.com/your-username/vehicle-detection-yolo11.git
 cd vehicle-detection-yolo11
+```
+### 2. Install dependencies
+```bash
+pip install ultralytics
+```
+### 3. Run Inference
+```bash
+from ultralytics import YOLO
 
-📦 Dataset
+model = YOLO('best.pt')
+results = model.predict(source='your_image.jpg', save=True)
+```
+
+## 📦 Dataset
 
 The dataset includes images of vehicles with bounding box annotations.
-
 You can download or explore it via [Kaggle](https://www.kaggle.com/datasets/alkanerturan/vehicledetection)
+
+## 💡 Inspiration
+
+This project was developed to explore real-time object detection using YOLOv8 and to fine-tune it for a specialized domain: traffic and vehicle monitoring.
+
+## 📬 Contact
+
+AmirHM
+[Email](4amirhm@gmail.com)
+
+
     
